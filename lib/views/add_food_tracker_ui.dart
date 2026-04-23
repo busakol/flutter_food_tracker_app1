@@ -84,7 +84,7 @@ class _AddFoodTrackerUiState extends State<AddFoodTrackerUi> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
                       child: Text(
@@ -99,7 +99,7 @@ class _AddFoodTrackerUiState extends State<AddFoodTrackerUi> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
                       child: Text(
@@ -114,7 +114,7 @@ class _AddFoodTrackerUiState extends State<AddFoodTrackerUi> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
                       child: Text(
@@ -129,7 +129,7 @@ class _AddFoodTrackerUiState extends State<AddFoodTrackerUi> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
                       child: Text(
@@ -140,6 +140,25 @@ class _AddFoodTrackerUiState extends State<AddFoodTrackerUi> {
                       ),
                     ),
                   ],
+                ),
+                SizedBox(height: 20),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'กินไปเท่าไหร่',
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+                TextField(
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                    hintText: 'เช่น 299.50',
+                  ),
                 ),
                 SizedBox(height: 20),
                 Align(

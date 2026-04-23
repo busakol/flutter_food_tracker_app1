@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import
+// ignore_for_file: sort_child_properties_last, unused_import
 import 'package:flutter/material.dart';
 import 'package:flutter_task_app/views/add_food_tracker_ui.dart';
 import 'package:flutter_task_app/views/update_delete_food_tracker_ui.dart';
@@ -23,22 +23,25 @@ class _ShowAllFoodTrackerUiState extends State<ShowAllFoodTrackerUi> {
         centerTitle: true,
       ),
       //Floating Action Button
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AddFoodTrackerUi(),
-            ),
-          );
-        },
-        child: Icon(
-          Icons.add,
-          color: Colors.white,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: 15.0),
+        child: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AddFoodTrackerUi(),
+              ),
+            );
+          },
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
+          backgroundColor: Colors.redAccent,
         ),
-        backgroundColor: Colors.redAccent,
+        //ตำแหน่งของ FloatingActionButton
       ),
-      //ตำแหน่งของ Floating Action Button
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }

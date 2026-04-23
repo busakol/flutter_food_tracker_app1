@@ -5,7 +5,6 @@ import 'dart:io';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_task_app/models/task.dart';
-import 'package:flutter/material.dart';
 
 class SupabaseService {
   //สร้าง instance/object/ตัวแทน ของ supabvase_flutter เพื่อจะทำงานต่างๆกับ Supabase
